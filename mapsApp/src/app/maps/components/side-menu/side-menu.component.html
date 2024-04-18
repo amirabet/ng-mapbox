@@ -1,0 +1,12 @@
+<ul class="list-group">
+    <li *ngFor="let item of menuItems"
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        class="list-group-item">
+        {{ item.name }}
+    </li>
+    <li class="list-group-item text-danger"
+        (click)=removeApiKey()>
+        Remove Key
+    </li>
+</ul>

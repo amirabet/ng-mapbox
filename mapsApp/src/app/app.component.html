@@ -1,0 +1,26 @@
+<!-- SUper simple solution to grab an API key for MapBox-->
+<!-- Ideally it should be made with a Guard -->
+
+<ng-container
+  *ngIf="!isApiKeyReady; then noAPIkey; else ApiKey">
+</ng-container>
+
+<ng-template #noAPIkey>
+    <div class="container">
+        <div class="row">
+            <div class="col" id="apikeyinput">
+                <div class="input-group input-group-lg align-middle">
+                    <span class="input-group-text">MapBox API Key</span>
+                    <input type="text" class="form-control" #apiKeyInput/> 
+                    <button class="btn btn-primary" type="button" (click)="saveApiKey(apiKeyInput.value)">Go!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</ng-template>
+
+<ng-template #ApiKey>
+    <router-outlet/>
+</ng-template>
+

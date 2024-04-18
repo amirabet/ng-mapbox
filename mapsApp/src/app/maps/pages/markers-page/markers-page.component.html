@@ -1,0 +1,15 @@
+<div id="map" #map></div>
+
+<ul class="list-group floating-control">
+    <li class="list-group-item" 
+        *ngFor="let marker of markers; let i = index" 
+        [ngStyle]="{color:marker.color, cursor:'pointer'}"
+        (dblclick)="deleteMarker(i)"
+        (click)="goToMarkerLocation(i)">
+        Marker {{ i +1 }}
+    </li>
+</ul>
+
+<button class="btn btn-sm btn-primary" (click)="createMarker()">
+    + Add Marker
+</button>
