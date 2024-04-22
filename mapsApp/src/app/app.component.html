@@ -9,10 +9,16 @@
     <div class="container">
         <div class="row">
             <div class="col" id="apikeyinput">
-                <div class="input-group input-group-lg align-middle">
-                    <span class="input-group-text">MapBox API Key</span>
-                    <input type="text" class="form-control" #apiKeyInput/> 
-                    <button class="btn btn-primary" type="button" (click)="saveApiKey(apiKeyInput.value)">Go!</button>
+                <div>
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text">Mapbox API Key</span>
+                        <input type="text" class="form-control" #apiKeyInput/> 
+                        <button class="btn btn-primary" type="button" (click)="saveApiKey(apiKeyInput.value)">Go!</button>
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <span class="btn btn-link" (click)="goToStandAlone()">Go to StandAlone Component Demo</span>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,5 +1,11 @@
 #apikeyinput {
     height: 100vh;
     display: flex;
+    flex: 1;
     align-items: center;
+    justify-content: center;
+}
+
+#apikeyinput > *{
+    flex: 1;
 }

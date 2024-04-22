@@ -1,0 +1,2 @@
+import{$a as m,La as i,Ma as r,Sa as l,Za as c,_ as u,_a as s,va as a}from"./chunk-US7XWXA2.js";var v=(()=>{let t=class t{constructor(){this.counter=16}};t.\u0275fac=function(e){return new(e||t)},t.\u0275cmp=u({type:t,selectors:[["counter-alone"]],inputs:{counter:"counter"},standalone:!0,features:[m],decls:4,vars:1,consts:[[1,"btn","btn-primary",3,"click"]],template:function(e,o){e&1&&(i(0,"h1"),c(1),r(),i(2,"button",0),l("click",function(){return o.counter=o.counter+1}),c(3,` + 1
+`),r()),e&2&&(a(),s("Counter ",o.counter,""))}});let n=t;return n})();export{v as a};

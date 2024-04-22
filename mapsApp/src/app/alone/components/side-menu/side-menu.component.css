@@ -1,0 +1,17 @@
+/* Encapstulated CSS can e very open with selectors */
+
+ul {
+    left:10px;
+    top:10px;
+    width:110px;
+}
+
+li {
+    cursor: pointer;
+    transition: 0.3s all;
+    font-size:80%;
+}
+
+li {
+    cursor: default;
+}

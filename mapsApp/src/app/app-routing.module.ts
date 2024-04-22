@@ -6,7 +6,16 @@ const routes: Routes = [
     path: 'maps',
     loadChildren: () => import('./maps/maps.module').then(m => m.MapsModule ),
   },
-  { path: '**',
+  /*
+  * Lazy load de un StandAlone comoponent, el cuál no estÁ importado dentro de ningún módulo.
+  * En lugar de loadChildren usamos loadComponent
+  */
+  {
+    path: 'alone',
+    loadComponent: () => import('./alone/pages/alone-page/alone-page.component').then(m => m.AlonePageComponent ),
+  },
+  { 
+    path: '**',
     redirectTo: 'maps'
   }
 ];
